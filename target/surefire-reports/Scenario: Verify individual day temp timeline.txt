@@ -1,0 +1,38 @@
+-------------------------------------------------------------------------------
+Test set: Scenario: Verify individual day temp timeline
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 3, Skipped: 3, Time elapsed: 50.36 sec <<< FAILURE! - in Scenario: Verify individual day temp timeline
+Scenario: Verify timeline is displayed in correct format  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:787)
+	at org.openqa.selenium.support.ui.FluentWait.<init>(FluentWait.java:96)
+	at org.openqa.selenium.support.ui.FluentWait.<init>(FluentWait.java:87)
+	at framework.BasePage.webAction(BasePage.java:19)
+	at framework.BasePage.getTextFromElement(BasePage.java:65)
+	at framework.web_pages.DarkSky.HomePage.getActualTemperatureTimeline(HomePage.java:82)
+	at framework.web_pages.DarkSky.HomePage.verifyTemperatureBarValues(HomePage.java:75)
+	at stepdefinition.DarkSkySD.iVerifyTempBarIncrement(DarkSkySD.java:45)
+	at ✽.Then I verify timeline is displayed with 2 hours incremented for next 11 hours(darkSky.feature:9)
+
+When I expand todays timeline(Scenario: Verify individual day temp timeline)  Time elapsed: 10.011 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:787)
+	at org.openqa.selenium.support.ui.FluentWait.<init>(FluentWait.java:96)
+	at org.openqa.selenium.support.ui.FluentWait.<init>(FluentWait.java:87)
+	at framework.BasePage.webAction(BasePage.java:19)
+	at framework.BasePage.clickOn(BasePage.java:38)
+	at framework.web_pages.DarkSky.HomePage.clickOnTodaysTimeline(HomePage.java:116)
+	at stepdefinition.DarkSkySD.iExpandTodaysTimeLine(DarkSkySD.java:50)
+	at ✽.When I expand todays timeline(darkSky.feature:14)
+
+Scenario: Verify individual day temp timeline  Time elapsed: 10.013 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:787)
+	at org.openqa.selenium.support.ui.FluentWait.<init>(FluentWait.java:96)
+	at org.openqa.selenium.support.ui.FluentWait.<init>(FluentWait.java:87)
+	at framework.BasePage.webAction(BasePage.java:19)
+	at framework.BasePage.clickOn(BasePage.java:38)
+	at framework.web_pages.DarkSky.HomePage.clickOnTodaysTimeline(HomePage.java:116)
+	at stepdefinition.DarkSkySD.iExpandTodaysTimeLine(DarkSkySD.java:50)
+	at ✽.When I expand todays timeline(darkSky.feature:14)
+

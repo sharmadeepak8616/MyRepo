@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: Scenario: Verify timeline is displayed in correct format
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 21.078 sec <<< FAILURE! - in Scenario: Verify timeline is displayed in correct format
+Then I verify timeline is displayed with 2 hours incremented for next 11 hours(Scenario: Verify timeline is displayed in correct format)  Time elapsed: 10.027 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:787)
+	at org.openqa.selenium.support.ui.FluentWait.<init>(FluentWait.java:96)
+	at org.openqa.selenium.support.ui.FluentWait.<init>(FluentWait.java:87)
+	at framework.BasePage.webAction(BasePage.java:19)
+	at framework.BasePage.getTextFromElement(BasePage.java:65)
+	at framework.web_pages.DarkSky.HomePage.getActualTemperatureTimeline(HomePage.java:82)
+	at framework.web_pages.DarkSky.HomePage.verifyTemperatureBarValues(HomePage.java:75)
+	at stepdefinition.DarkSkySD.iVerifyTempBarIncrement(DarkSkySD.java:45)
+	at ✽.Then I verify timeline is displayed with 2 hours incremented for next 11 hours(darkSky.feature:9)
+

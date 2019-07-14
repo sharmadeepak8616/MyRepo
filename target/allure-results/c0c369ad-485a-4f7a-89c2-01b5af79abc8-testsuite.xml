@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1543377646420" stop="1543377686472" version="1.4.15" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Verify individual day temp timeline</name>
+    <title>Verify individual day temp timeline</title>
+    <test-cases>
+        <test-case start="1543377656430" stop="1543377656431" status="passed">
+            <name>Given I am on Dark Sky webpage</name>
+            <title>Given I am on Dark Sky webpage</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Deepaks-MacBook-Pro.local"/>
+                <label name="thread" value="23713@Deepaks-MacBook-Pro.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1543377666448" stop="1543377666450" status="broken">
+            <name>When I expand todays timeline</name>
+            <title>When I expand todays timeline</title>
+            <failure>
+                <message>NullPointerException: null</message>
+                <stack-trace>java.lang.NullPointerException
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:787)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:96)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:87)
+	at framework.BasePage.webAction(BasePage.java:19)
+	at framework.BasePage.clickOn(BasePage.java:38)
+	at framework.web_pages.DarkSky.HomePage.clickOnTodaysTimeline(HomePage.java:116)
+	at stepdefinition.DarkSkySD.iExpandTodaysTimeLine(DarkSkySD.java:50)
+	at ✽.When I expand todays timeline(darkSky.feature:14)
+</stack-trace>
+            </failure>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Deepaks-MacBook-Pro.local"/>
+                <label name="thread" value="23713@Deepaks-MacBook-Pro.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1543377676461" stop="1543377676461" status="pending">
+            <name>Then I verify lowest and highest temp is displayed correctly</name>
+            <title>Then I verify lowest and highest temp is displayed correctly</title>
+            <failure>
+                <message>Test ignored (without reason)!</message>
+                <stack-trace>There are no stack trace</stack-trace>
+            </failure>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Deepaks-MacBook-Pro.local"/>
+                <label name="thread" value="23713@Deepaks-MacBook-Pro.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1543377686470" stop="1543377686470" status="pending">
+            <name>And close browser</name>
+            <title>And close browser</title>
+            <failure>
+                <message>Test ignored (without reason)!</message>
+                <stack-trace>There are no stack trace</stack-trace>
+            </failure>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Deepaks-MacBook-Pro.local"/>
+                <label name="thread" value="23713@Deepaks-MacBook-Pro.local.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="story" value="Verify individual day temp timeline"/>
+        <label name="feature" value="Dark Sky Feature"/>
+        <label name="framework" value="CucumberJVM"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

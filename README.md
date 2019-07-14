@@ -1,4 +1,2 @@
-# MyRepo
-This is my experiment.
-Experiments are always good.
-Good is always healthy.
+# DarkSkyProject
+This project is to perform automation testing on Darksky website

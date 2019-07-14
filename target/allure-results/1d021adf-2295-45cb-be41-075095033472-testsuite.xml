@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1543377615739" stop="1543377646148" version="1.4.15" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Verify timeline is displayed in correct format</name>
+    <title>Verify timeline is displayed in correct format</title>
+    <test-cases>
+        <test-case start="1543377625779" stop="1543377625783" status="passed">
+            <name>Given I am on Dark Sky webpage</name>
+            <title>Given I am on Dark Sky webpage</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Deepaks-MacBook-Pro.local"/>
+                <label name="thread" value="23713@Deepaks-MacBook-Pro.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1543377636107" stop="1543377636127" status="broken">
+            <name>Then I verify timeline is displayed with 2 hours incremented for next 11 hours</name>
+            <title>Then I verify timeline is displayed with 2 hours incremented for next 11 hours</title>
+            <failure>
+                <message>NullPointerException: null</message>
+                <stack-trace>java.lang.NullPointerException
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:787)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:96)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:87)
+	at framework.BasePage.webAction(BasePage.java:19)
+	at framework.BasePage.getTextFromElement(BasePage.java:65)
+	at framework.web_pages.DarkSky.HomePage.getActualTemperatureTimeline(HomePage.java:82)
+	at framework.web_pages.DarkSky.HomePage.verifyTemperatureBarValues(HomePage.java:75)
+	at stepdefinition.DarkSkySD.iVerifyTempBarIncrement(DarkSkySD.java:45)
+	at ✽.Then I verify timeline is displayed with 2 hours incremented for next 11 hours(darkSky.feature:9)
+</stack-trace>
+            </failure>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Deepaks-MacBook-Pro.local"/>
+                <label name="thread" value="23713@Deepaks-MacBook-Pro.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1543377646142" stop="1543377646144" status="pending">
+            <name>And close browser</name>
+            <title>And close browser</title>
+            <failure>
+                <message>Test ignored (without reason)!</message>
+                <stack-trace>There are no stack trace</stack-trace>
+            </failure>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Deepaks-MacBook-Pro.local"/>
+                <label name="thread" value="23713@Deepaks-MacBook-Pro.local.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="story" value="Verify timeline is displayed in correct format"/>
+        <label name="feature" value="Dark Sky Feature"/>
+        <label name="framework" value="CucumberJVM"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>
